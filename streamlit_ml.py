@@ -23,7 +23,7 @@ def create_download_link(content, filename, text):
     b64 = base64.b64encode(content.encode()).decode()
     return f'<a href="data:file/txt;base64,{b64}" download="{filename}">{text}</a>'
 
-file_path = st.text_input("Enter the file path of the dataset:", r"C:\Degree Year 2 Semester 3\Machine Learning\Assignment\marketing_campaign.csv")
+file_path = st.text_input("Enter the file path of the dataset:", r""marketing_campaign.csv"")
 
 if file_path:
     data = load_data(file_path)
